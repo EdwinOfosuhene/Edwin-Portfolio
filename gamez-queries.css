@@ -1,0 +1,96 @@
+/**************************/
+/****** MEDIA QUERIES******/
+/**************************/
+
+/*Below 1131px*/
+@media (max-width: 1021px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .sf-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 969px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 857px) {
+  .next-project {
+    width: 90%;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .sf-title {
+    font-size: 2rem;
+  }
+
+  .m-t {
+    font-size: 2.5rem;
+  }
+
+  .sprints-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 777px) {
+  .method-tools-box {
+    gap: 2rem;
+  }
+
+  .nav-content {
+    gap: 2rem;
+  }
+
+  .nav-link:li {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 699px) {
+  .dp-topic {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-title-2 {
+    font-size: 2.5rem;
+  }
+
+  .santanfoods-preview {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-content li {
+    font-size: 1.6rem;
+  }
+
+  .nav-content {
+    gap: 1.3rem;
+  }
+
+  .proj-src {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .gamez-link-txt {
+    font-size: 1.4rem;
+  }
+}

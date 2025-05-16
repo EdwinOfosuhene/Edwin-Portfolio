@@ -1,0 +1,619 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex mono";
+  line-height: 1.3;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/**************************/
+/* NAV */
+/**************************/
+
+.header {
+  padding: 1.3rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.website-logo {
+  height: 2.5rem;
+}
+
+.mini-nav {
+  align-self: center;
+}
+
+.nav-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-content li {
+  list-style: none;
+  font-size: 2.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-family: "Ramaraja";
+  display: inline-block;
+  text-decoration: none;
+  color: #2b2b2b;
+  transition: ease-in 0.3s all;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  transform: scale(1.2);
+}
+
+/**************************/
+/* PROJECT TOPIC */
+/**************************/
+
+.project-menu {
+  margin-top: 6.2rem;
+}
+
+.topic-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  border: 1px solid black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+.santanfoods-preview {
+  width: 100%;
+}
+
+.project-title {
+  font-size: 4rem;
+  width: fit-content;
+  font-weight: 500;
+  font-family: ramaraja;
+  align-self: center;
+  color: #3247e6;
+}
+
+.proj-src {
+  font-size: 1.6rem;
+  font-weight: 400;
+  align-self: center;
+  justify-self: right;
+  margin-left: 3rem;
+  width: max-content;
+}
+
+.proj-intro {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.def {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.intro-box {
+  padding: 7px 14px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.proj-description {
+  margin-top: 6.2rem;
+  justify-self: center;
+}
+
+.text-description {
+  font-size: 1.6rem;
+  margin: auto;
+  width: 80%;
+  line-height: 1.5;
+  margin-bottom: 6.2rem;
+}
+
+.meth-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.methods-and-tools {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.method-tools-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.m-t {
+  justify-self: center;
+  align-self: center;
+  font-family: ramaraja;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.acc-skill {
+  font-size: 1.6rem;
+  padding: 7px 14px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.m-t-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+/**************************/
+/* SANTANFOODS INTRO */
+/**************************/
+
+.section-about-santansave {
+  margin-top: 6.2rem;
+  width: 90%;
+}
+
+.sf-description-box {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 2rem;
+  margin-bottom: 6.2rem;
+}
+
+.sf-img {
+  width: 30%;
+  height: fit-content;
+  align-self: center;
+}
+
+.sf-logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.sf-title {
+  font-size: 3rem;
+  font-weight: 500;
+  align-self: center;
+  color: #3247e6;
+}
+
+.text-2 {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  justify-self: center;
+}
+
+.des-box {
+  padding-left: 1rem;
+  border-left: 3px solid #3247e6;
+}
+
+/**************************/
+/* SANTANSAVE OVERVIEW */
+/**************************/
+
+.dp-topic {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  justify-self: center;
+  color: #3247e6;
+  margin-bottom: 3rem;
+}
+
+.dp-img {
+  display: grid;
+  width: 100%;
+  justify-self: center;
+  margin-bottom: 4.8rem;
+}
+
+/**************************/
+/* TARGET AUDIENCE*/
+/**************************/
+.section-overview {
+  width: 80%;
+}
+
+.target-audience {
+  display: flex;
+}
+
+.targ-aud {
+  width: 70%;
+  justify-self: center;
+}
+
+.target-box {
+  display: grid;
+}
+
+.target-sub {
+  display: grid;
+}
+
+.target-aud-sub {
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+/**************************/
+/* PROBLEM STATEMENT*/
+/**************************/
+.section-problem-statement {
+  width: 80%;
+  margin-bottom: 4.8rem;
+}
+
+.problem-statement {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+}
+
+.prob-s-img {
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+}
+
+/**************************/
+/* SOLUTION AND GOALS*/
+/**************************/
+.solution-box {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  margin-bottom: 4.8rem;
+  gap: 3rem;
+}
+
+.solution {
+  display: grid;
+}
+
+/**************************/
+/* USER RESEARCH*/
+/**************************/
+.section-user-research {
+  width: 80%;
+}
+
+.r-a-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ee964b;
+  margin-bottom: 1.5rem;
+}
+
+.r-a-content {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1.3;
+}
+
+.comp-analysis-img {
+  display: grid;
+  width: 85%;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+/**************************/
+/* QUANTITATIVE RESEARCH*/
+/**************************/
+.quanti-section {
+  width: 80%;
+}
+
+.quanti-survey-img {
+  display: grid;
+  width: 80%;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+/**************************/
+/* QUALITATIVE RESEARCH*/
+/**************************/
+.qualitative-research {
+  width: 80%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #3247e6;
+  margin-bottom: 1.5rem;
+}
+
+.quali-questions li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.quali-questions li:last-child {
+  margin-bottom: 3rem;
+}
+
+.quali-img {
+  display: grid;
+  width: 90%;
+  justify-self: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+/**************************/
+/*USER PERSONA*/
+/**************************/
+.user-persona {
+  display: grid;
+  width: 90%;
+  justify-self: center;
+  margin-top: 2rem;
+}
+
+.empathy-map {
+  display: grid;
+  width: 70%;
+  justify-self: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.maj-pain-points {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.pp-img {
+  width: 75%;
+  justify-self: center;
+}
+
+.li-pp {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pain-list {
+  align-self: center;
+}
+
+/**************************/
+/****AFFINITY DIAGRAM******/
+/**************************/
+.section-affinity {
+  width: 80%;
+}
+
+.affinity-diagram {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.User-flow {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.info-arch {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.feat-flow-img {
+  width: 100%;
+}
+
+.low-fi-proto {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.high-fidelity-proto {
+  width: 100%;
+}
+
+.hi-fi-2 {
+  width: 80%;
+  justify-self: center;
+}
+
+.hi-fi-3 {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.about-title-2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  justify-self: center;
+  color: #3247e6;
+  margin-bottom: 5rem;
+}
+
+/**************************/
+/******ABOUT THIS APP******/
+/**************************/
+.section-about-app {
+  width: 90%;
+}
+
+.about-img {
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ee964b;
+}
+
+.about-container {
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-bottom: 6rem;
+}
+
+.about-txt-container {
+  align-self: center;
+  display: grid;
+}
+
+.zero-marg-bottom {
+  margin-bottom: 0;
+}
+
+/**************************/
+/****FUTURE ROADMAPS******/
+/**************************/
+
+.fut-road-img {
+  width: 90%;
+}
+
+.usability-img {
+  justify-self: center;
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.insight-img {
+  width: 80%;
+  justify-self: center;
+}
+
+/**************************/
+/*********FOOTER********/
+/**************************/
+.section-footer {
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+
+.footer-title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: ramaraja;
+  margin-bottom: 3rem;
+}
+
+.next-project {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  width: 70%;
+  align-items: center;
+  justify-self: center;
+}
+
+.footer-img {
+  width: 80%;
+}
+
+.footer-img:hover {
+  transform: scale(1.3);
+  transition: all ease-in 0.4s;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 4.8rem;
+}
+
+.ft-content {
+  font-size: 1.6rem;
+  padding: 5px 10px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.mail-button:link,
+.mail-button:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}

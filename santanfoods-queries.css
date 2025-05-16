@@ -1,0 +1,156 @@
+/**************************/
+/****** MEDIA QUERIES******/
+/**************************/
+
+/*Below 1131px*/
+@media (max-width: 1021px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .sf-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 969px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 857px) {
+  .text-2 {
+    font-size: 1.4rem;
+  }
+  .ideation-sub {
+    font-size: 1.4rem;
+  }
+  .ut-text {
+    font-size: 1.4rem;
+  }
+  .next-project {
+    width: 90%;
+  }
+  .acc-skill {
+    font-size: 1.4rem;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .sf-title {
+    font-size: 2rem;
+  }
+
+  .m-t {
+    font-size: 2.5rem;
+  }
+
+  .sprints-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ut-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 777px) {
+  .method-tools-box {
+    gap: 2rem;
+  }
+
+  .nav-content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .ideation-sub {
+    width: 90%;
+  }
+
+  .nav-content {
+    gap: 1.5rem;
+  }
+
+  .nav-link:li {
+    font-size: 1.6rem;
+  }
+
+  .website-logo {
+    height: 2rem;
+  }
+
+  .project-menu {
+    margin-top: 4.8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .intro-box {
+    padding: 3px 7px;
+  }
+  .proj-src {
+    font-size: 1.4rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .sf-title {
+    font-size: 1.6rem;
+  }
+
+  .santanfoods-preview {
+    display: none;
+  }
+
+  .nav-content li {
+    font-size: 1.6rem;
+  }
+
+  .nav-content {
+    gap: 1rem;
+  }
+
+  .acc-skill {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .sf-logo {
+    display: none;
+  }
+
+  .sf-description-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .text-2 {
+    text-align: center;
+  }
+
+  .ut-text {
+    font-size: 1.2rem;
+  }
+
+  .ut-col {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer-title {
+    font-size: 2.5rem;
+  }
+}

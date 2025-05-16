@@ -1,0 +1,153 @@
+/**************************/
+/****** MEDIA QUERIES******/
+/**************************/
+
+/*Below 1131px*/
+@media (max-width: 1021px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .sf-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 969px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 857px) {
+  .next-project {
+    width: 90%;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .sf-title {
+    font-size: 2rem;
+  }
+
+  .m-t {
+    font-size: 2.5rem;
+  }
+
+  .sprints-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ut-title {
+    font-size: 2.5rem;
+  }
+
+  .li-pp {
+    font-size: 1.4rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .r-a-content {
+    font-size: 1.4rem;
+  }
+
+  .text-2 {
+    font-size: 1.4rem;
+  }
+
+  .target-aud-sub {
+    font-size: 1.4rem;
+  }
+
+  .quali-questions li {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 777px) {
+  .method-tools-box {
+    gap: 2rem;
+  }
+
+  .nav-content {
+    gap: 1.5rem;
+  }
+
+  .nav-link:li {
+    font-size: 1.6rem;
+  }
+
+  .li-pp {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 699px) {
+  .dp-topic {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-title-2 {
+    font-size: 2.5rem;
+  }
+
+  .santanfoods-preview {
+    display: none;
+  }
+
+  .acc-skill {
+    font-size: 1.4rem;
+  }
+
+  .about-container {
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .sf-logo {
+    display: none;
+  }
+
+  .sf-description-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .text-2 {
+    text-align: center;
+  }
+
+  .nav-content {
+    gap: 1rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .nav-content li {
+    font-size: 1.6rem;
+  }
+
+  .nav-content {
+    gap: 1.3rem;
+  }
+
+  .acc-skill {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex mono";
+  line-height: 1.3;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/**************************/
+/* NAV */
+/**************************/
+
+.header {
+  padding: 1.3rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.website-logo {
+  height: 2.5rem;
+}
+
+.mini-nav {
+  align-self: center;
+}
+
+.nav-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-content li {
+  list-style: none;
+  font-size: 2.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-family: "Ramaraja";
+  display: inline-block;
+  text-decoration: none;
+  color: #2b2b2b;
+  transition: ease-in 0.3s all;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  transform: scale(1.2);
+}
+
+/**************************/
+/* PROJECT TOPIC */
+/**************************/
+.project-menu {
+  margin-top: 6.2rem;
+}
+
+.topic-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  border: 1px solid black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+.santanfoods-preview {
+  width: 100%;
+}
+
+.project-title {
+  font-size: 4rem;
+  width: fit-content;
+  font-weight: 500;
+  font-family: ramaraja;
+  align-self: center;
+  color: #0c5a20;
+}
+
+.proj-src {
+  font-size: 1.6rem;
+  font-weight: 400;
+  align-self: center;
+  justify-self: right;
+  width: max-content;
+}
+
+.proj-intro {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.def {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.intro-box {
+  padding: 7px 14px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.proj-description {
+  margin-top: 6.2rem;
+  justify-self: center;
+  width: 90%;
+}
+
+.text-description {
+  font-size: 1.6rem;
+  margin: auto;
+  width: 60%;
+  line-height: 1.5;
+  margin-bottom: 6.2rem;
+}
+
+.meth-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.methods-and-tools {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.method-tools-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.m-t {
+  justify-self: center;
+  align-self: center;
+  font-family: ramaraja;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.acc-skill {
+  font-size: 1.6rem;
+  padding: 7px 14px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.m-t-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+/**************************/
+/* SANTANFOODS INTRO */
+/**************************/
+
+.section-about-santanfoods {
+  margin-top: 6.2rem;
+  width: 90%;
+}
+
+.sf-description-box {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 2rem;
+  margin-bottom: 6.2rem;
+}
+
+.sf-img {
+  width: 30%;
+  height: fit-content;
+  align-self: center;
+}
+
+.sf-logo {
+  display: flex;
+}
+
+.sf-title {
+  font-size: 3rem;
+  font-weight: 500;
+  align-self: center;
+  color: #0c5a20;
+}
+
+.text-2 {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  justify-self: center;
+}
+
+.des-box {
+  padding-left: 1rem;
+  border-left: 3px solid #0c5a20;
+}
+
+/**************************/
+/* IDEATION */
+/**************************/
+.section-ideation {
+  margin-top: 4.8rem;
+}
+
+.sprints-title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: ramaraja;
+  margin-bottom: 3.6rem;
+}
+
+.ideation-sub {
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-left: 2rem;
+  border-left: 3px solid #0c5a20;
+}
+
+.sprint-box {
+  margin-bottom: 4.8rem;
+}
+
+/**************************/
+/* USER FLOW */
+/**************************/
+
+.img-uf {
+  display: grid;
+  margin-bottom: 4.8rem;
+  margin-top: 4.8rem;
+}
+
+.user-flow-img {
+  width: 70%;
+  justify-self: center;
+}
+
+.wireframe-1 {
+  width: 100%;
+  justify-self: center;
+}
+
+/**************************/
+/* USER TESTING********/
+/**************************/
+
+.ut-col {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 85%;
+  justify-self: center;
+}
+
+.ut-title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: ramaraja;
+}
+
+.ut-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.ut-img {
+  display: grid;
+}
+
+.ut {
+  align-content: center;
+}
+
+.ut-main-img {
+  width: 90%;
+  justify-self: center;
+}
+
+/**************************/
+/*********FOOTER********/
+/**************************/
+.section-footer {
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+
+.footer-title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: ramaraja;
+  margin-bottom: 3rem;
+}
+
+.next-project {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  width: 70%;
+  align-items: center;
+  justify-self: center;
+}
+
+.footer-img {
+  width: 80%;
+}
+
+.footer-img:hover {
+  transform: scale(1.3);
+  transition: all ease-in 0.4s;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 4.8rem;
+}
+
+.ft-content {
+  font-size: 1.6rem;
+  padding: 5px 10px;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.mail-button:link,
+.mail-button:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}

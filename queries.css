@@ -1,0 +1,295 @@
+/**************************/
+/****** MEDIA QUERIES******/
+/**************************/
+
+/*Below 1131px*/
+
+@media (max-width: 1091px) {
+  .main-heading {
+    font-size: 6rem;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 987px) {
+  .acc-about-text {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    font-size: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 2.2rem;
+  }
+
+  .ft-content {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 944px) {
+  .acc-skill {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .main-heading {
+    font-size: 5rem;
+  }
+
+  .proj-type {
+    display: none;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-1 {
+    display: grid;
+  }
+
+  .project-preview {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .me img {
+    width: 85%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 757px) {
+  .footer-content {
+    justify-content: center;
+  }
+
+  .skill-box {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .group-title {
+    justify-self: left;
+  }
+
+  .acc-about-box {
+    grid-column: 1 /-1;
+  }
+
+  .acc {
+    grid-column: 1/-1;
+    display: grid;
+  }
+
+  .img-me {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .prev-work-img {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .acc-about {
+    gap: 4rem;
+  }
+
+  .prev-works {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 694px) {
+  .project-description {
+    font-size: 1.5rem;
+  }
+
+  .project-content {
+    gap: 4rem;
+  }
+
+  .project-title:link,
+  .project-title:visited {
+    font-size: 2rem;
+  }
+
+  .acc-about-text {
+    font-size: 1.4rem;
+  }
+
+  .nav-content {
+    gap: 2rem;
+  }
+
+  .section-hero {
+    margin-top: 4.8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .me {
+    order: -2;
+    margin-bottom: 4.2rem;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .nav-content li {
+    font-size: 3rem;
+  }
+
+  /*MOBILE NAV*/
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    background-color: #ffffffc5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in;
+    transform: translateX(100%);
+
+    /*Hide elements visually...later with javascript*/
+
+    /*Step ONE*/
+    opacity: 0;
+
+    /*Step TWO*/
+    /*Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /*Step THREE*/
+    /*Hide from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-open"] {
+    display: none;
+  }
+
+  .group-title {
+    justify-self: left;
+  }
+}
+
+@media (max-width: 562px) {
+  .acc-skill {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    margin-bottom: 2rem;
+  }
+
+  .group-title {
+    font-size: 2rem;
+  }
+
+  .proj {
+    font-size: 3rem;
+  }
+
+  .skill-box {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .website-logo {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .acc-skill {
+    font-size: 1.2rem;
+    padding: 3.5px 7px;
+  }
+
+  .skill-box {
+    gap: 2rem;
+  }
+
+  .section-skills-list {
+    padding: 0 3rem;
+  }
+
+  .ft-content {
+    font-size: 1.4rem;
+  }
+
+  .section-about {
+    margin-bottom: 6.2rem;
+  }
+
+  .acc-about {
+    margin-top: 4.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-description {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact:visited,
+  .contact:link {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #2b2b2b;
+  }
+
+  .project-description {
+    font-size: 1.4rem;
+  }
+
+  .main-heading {
+    font-size: 3.5rem;
+  }
+}
