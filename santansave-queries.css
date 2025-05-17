@@ -122,17 +122,18 @@
     display: none;
   }
 
+  .topic-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .proj-src {
+    font-size: 1.4rem;
+  }
+
   .sf-description-box {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .text-2 {
-    text-align: center;
-  }
-
-  .nav-content {
-    gap: 1rem;
   }
 
   .text {
@@ -140,14 +141,132 @@
   }
 
   .nav-content li {
-    font-size: 1.6rem;
-  }
-
-  .nav-content {
-    gap: 1.3rem;
+    font-size: 3rem;
   }
 
   .acc-skill {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  /*MOBILE NAV*/
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    background-color: #ffffffc5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in;
+    transform: translateX(100%);
+
+    /*Hide elements visually...later with javascript*/
+
+    /*Step ONE*/
+    opacity: 0;
+
+    /*Step TWO*/
+    /*Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /*Step THREE*/
+    /*Hide from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-open"] {
+    display: none;
+  }
+}
+
+@media (max-width: 562px) {
+  .text-description {
+    font-size: 1.4rem;
+  }
+
+  .website-logo {
+    height: 2rem;
+  }
+
+  .dp-topic {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .problem-statement {
+    grid-template-columns: 1fr;
+  }
+
+  .solution {
+    order: 2;
+    width: 90%;
+    justify-self: center;
+  }
+
+  .solution-box {
+    grid-template-columns: 1fr;
+  }
+
+  .maj-pain-points {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-txt-container {
+    order: 1;
+  }
+
+  .method-tools-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 482px) {
+  .footer-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .topic-box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .pain-list {
+    justify-self: center;
+    width: 80%;
   }
 }

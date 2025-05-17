@@ -15,26 +15,63 @@
     />
 
     <link rel="stylesheet" href="santansave.css" />
+
     <link rel="stylesheet" href="santansave-queries.css" />
+
+    <script defer src="js/script.js"></script>
 
     <title>SantanSave</title>
   </head>
   <body>
     <main>
-      <header class="header nav-open">
+      <header class="header sticky">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img class="website-logo" src="edwin ofosuhene.png" alt="site-logo"
           /></a>
         </div>
-        <nav class="mini-nav">
+        <nav class="main-nav">
           <ul class="nav-content">
-            <a class="nav-link" href="#"><li>projects</li></a>
-            <a class="nav-link" href="#"><li>skills</li> </a>
-            <a class="nav-link" href="#"><li>about</li> </a>
+            <a class="nav-link" href="index.html#projects"><li>projects</li></a>
+            <a class="nav-link" href="index.html#skills"><li>skills</li> </a>
+            <a class="nav-link" href="index.html#about"><li>about</li> </a>
             <a class="nav-link" href="#"><li>resume</li> </a>
           </ul>
         </nav>
+
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="icon-open"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="icon-close"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </header>
 
       <header class="project-menu container">
@@ -74,15 +111,15 @@
 
         <div class="proj-description">
           <p class="text-description">
-            In an eight-week school project, I collaborated with eight
-            coursemates to improve the UX/UI of Hilfegeschichten, a web platform
-            for sharing personal stories about seeking and receiving help in
-            city of Siegen. Our team conducted research, generated new ideas,
-            and developed wireframes and prototypes to refine the existing
-            website. We focused on enhancing accessibility, optimizing text,
-            images, and colors to ensure inclusivity for all users. Through our
-            efforts, we polished the website’s design and functionality, making
-            significant improvements to usability and user engagement.
+            In ten weeks I started and completed my personal Santansave project,
+            which aimed to address the unique financial needs of students by
+            offering a simple, intuitive, and trustworthy digital experience. I
+            applied core UI/UX design principles throughout the process—from
+            conducting competitive analysis and defining user flows to building
+            a solid information architecture. The design process also included
+            iterative prototyping and usability testing to ensure the platform
+            was not only functional but also genuinely user-friendly and
+            engaging for the student demographic.
           </p>
         </div>
         <div class="meth-tools">
@@ -187,9 +224,7 @@
               are faced with significant expenses such as tuition, textbooks,
               housing and food. While some may not have a steady income, as many
               of them work part-time jobs or may rely on financial aid or
-              support from their families. This makes it challenging to save
-              consistently and build a strong financial foundation for the
-              future
+              support from their families.
             </p>
           </div>
         </div>
@@ -515,7 +550,7 @@
       <div class="container">
         <p class="dp-topic">Usability Testing</p>
 
-        <p class="r-a-content">
+        <p class="r-a-content usability-text">
           After the visual design was completed. I conducted a usability test
           with 2 participants, to check if the application is usable and
           accessible to my targeted audience which are undergraduate students.
@@ -543,7 +578,7 @@
         <img class="insight-img grid" src="insight.png" />
       </section>
 
-      <section class="container">
+      <section class="conclusion container">
         <p class="dp-topic">Conclusion</p>
 
         <p class="r-a-content">
@@ -571,15 +606,19 @@
 
       <ul class="next-project">
         <li>
-          <a href="#"><img class="footer-img" src="SantanSave.png" /></a>
+          <a href="gamez.html"><img class="footer-img" src="gamez.png" /></a>
         </li>
 
         <li>
-          <a href="#"><img class="footer-img" src="Hilfegescichten.png" /></a>
+          <a href="hilfegescichten.html"
+            ><img class="footer-img" src="Hilfegescichten.png"
+          /></a>
         </li>
 
         <li>
-          <a href="#"><img class="footer-img" src="SantanFoods.png" /></a>
+          <a href="santanfoods.html"
+            ><img class="footer-img" src="SantanFoods.png"
+          /></a>
         </li>
       </ul>
 

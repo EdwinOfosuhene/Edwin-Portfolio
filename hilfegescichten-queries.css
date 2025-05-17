@@ -9,83 +9,79 @@
   }
 
   .sf-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 969px) {
-  .footer-content {
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+@media (max-width: 851px) {
+  .sf-title {
+    font-size: 1.7rem;
   }
 
-  @media (max-width: 851px) {
-    .sf-title {
-      font-size: 1.7rem;
-    }
+  .ideation-sub {
+    font-size: 1.4rem;
+  }
 
-    .ideation-sub {
-      font-size: 1.4rem;
-    }
+  .text-2 {
+    font-size: 1.4rem;
+  }
 
-    .text-2 {
-      font-size: 1.4rem;
-    }
+  .text-description {
+    font-size: 1.4rem;
+  }
 
-    .text-description {
-      font-size: 1.4rem;
-    }
+  .text {
+    font-size: 1.4rem;
+  }
 
-    .text {
-      font-size: 1.4rem;
-    }
+  .acc-skill {
+    font-size: 1.4rem;
+    padding: 3.5px 7px;
+  }
 
-    .acc-skill {
-      font-size: 1.4rem;
-      padding: 3.5px 7px;
-    }
+  .goals-list p {
+    font-size: 1.4rem;
+  }
 
-    .gamez-link-txt {
-      font-size: 1.4rem;
-    }
-
-    .project-title {
-      font-size: 2rem;
-    }
+  .project-title {
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 777px) {
-  .nav-content {
-    gap: 2rem;
-  }
-
-  .santanfoods-preview {
-    display: none;
-  }
-}
-
-@media (max-width: 725px) {
+@media (max-width: 717px) {
   .nav-content {
     gap: 1.5rem;
   }
+}
+
+@media (max-width: 695px) {
+  .santanfoods-preview {
+    display: none;
+  }
+
+  .proj-src {
+    font-size: 1.4rem;
+  }
+
+  .sf-logo {
+    display: none;
+  }
+
+  .sf-description-box {
+    grid-template-columns: 1fr;
+  }
 
   .method-tools-box {
-    gap: 2rem;
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 643px) {
   /*MOBILE NAV*/
 
   .btn-mobile-nav {
     display: block;
     z-index: 999;
-  }
-
-  .proj-src {
-    font-size: 1.4rem;
   }
 
   .main-nav {
@@ -137,13 +133,5 @@
 
   .nav-content li {
     font-size: 3rem;
-  }
-
-  .footer-title {
-    font-size: 2rem;
-  }
-
-  .method-tools-box {
-    grid-template-columns: 1fr;
   }
 }

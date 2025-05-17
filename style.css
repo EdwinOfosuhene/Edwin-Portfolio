@@ -140,7 +140,7 @@ body {
 
 .hero-description span {
   display: inline-block;
-  color: blue;
+  color: #3247e6;
   font-size: 1.8rem;
   font-weight: 400;
   font-style: normal;
@@ -236,6 +236,11 @@ body {
   width: fit-content;
 }
 
+.project-title:hover {
+  color: #3247e6;
+  transition: all 0.3s ease-in-out;
+}
+
 .project-description {
   font-family: IBM plex mono;
   font-size: 1.6rem;
@@ -266,11 +271,18 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
+.read-more:hover {
+  color: #3247e6;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
 .project-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 6.4rem;
-  gap: 6rem;
+  gap: 4rem;
   border-bottom: 1px solid #ececec;
 }
 

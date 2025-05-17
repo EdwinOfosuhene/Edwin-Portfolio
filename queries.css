@@ -222,6 +222,7 @@
 @media (max-width: 562px) {
   .acc-skill {
     font-size: 1.4rem;
+    padding: 3.5px 7px;
   }
 
   .hero-description {

@@ -38,12 +38,40 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 9999;
+  height: 6rem;
+  box-shadow: 0 1, 2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/* MOBILE NAV */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3rem;
+  width: 3rem;
+  color: #000;
+}
+
+.icon-mobile-nav[name="icon-close"] {
+  display: none;
+}
+
 /**************************/
 /* NAV */
 /**************************/
 
 .header {
-  padding: 1.3rem 3.6rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -169,7 +197,7 @@ body {
 }
 
 .methods-and-tools {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -242,7 +270,7 @@ body {
 
 .text-2 {
   font-size: 1.6rem;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
   width: 100%;
   justify-self: center;
@@ -308,18 +336,19 @@ body {
 /* PROBLEM STATEMENT*/
 /**************************/
 .section-problem-statement {
-  width: 80%;
+  width: 90%;
   margin-bottom: 4.8rem;
 }
 
 .problem-statement {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  justify-self: center;
 }
 
 .prob-s-img {
-  width: 90%;
+  width: 80%;
   justify-self: center;
   align-self: center;
 }
@@ -332,6 +361,8 @@ body {
   grid-template-columns: 1fr 1.2fr;
   margin-bottom: 4.8rem;
   gap: 3rem;
+  width: 90%;
+  justify-self: center;
 }
 
 .solution {
@@ -342,7 +373,7 @@ body {
 /* USER RESEARCH*/
 /**************************/
 .section-user-research {
-  width: 80%;
+  width: 90%;
 }
 
 .r-a-text {
@@ -350,6 +381,7 @@ body {
   font-weight: 500;
   color: #ee964b;
   margin-bottom: 1.5rem;
+  justify-self: center;
 }
 
 .r-a-content {
@@ -546,7 +578,8 @@ body {
 /**************************/
 
 .fut-road-img {
-  width: 90%;
+  width: 100%;
+  justify-self: center;
 }
 
 .usability-img {
@@ -556,8 +589,14 @@ body {
 }
 
 .insight-img {
+  width: 100%;
+  justify-self: center;
+}
+
+.usability-text {
   width: 80%;
   justify-self: center;
+  margin-bottom: 3rem;
 }
 
 /**************************/
@@ -616,4 +655,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+.conclusion {
+  width: 80%;
 }

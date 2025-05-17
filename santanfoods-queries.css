@@ -88,19 +88,26 @@
   .website-logo {
     height: 2rem;
   }
-
-  .project-menu {
-    margin-top: 4.8rem;
-  }
 }
 
 @media (max-width: 650px) {
   .intro-box {
     padding: 3px 7px;
   }
+
+  .topic-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .user-flow-img {
+    width: 90%;
+  }
+
   .proj-src {
     font-size: 1.4rem;
   }
+
   .text {
     font-size: 1.4rem;
   }
@@ -114,15 +121,61 @@
   }
 
   .nav-content li {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   .nav-content {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 3.5rem;
   }
 
-  .acc-skill {
-    font-size: 1.2rem;
+  /*MOBILE NAV*/
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    background-color: #ffffffc5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in;
+    transform: translateX(100%);
+
+    /*Hide elements visually...later with javascript*/
+
+    /*Step ONE*/
+    opacity: 0;
+
+    /*Step TWO*/
+    /*Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /*Step THREE*/
+    /*Hide from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="icon-open"] {
+    display: none;
   }
 }
 
@@ -137,11 +190,11 @@
   }
 
   .text-2 {
-    text-align: center;
+    text-align: left;
   }
 
   .ut-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .ut-col {
@@ -151,6 +204,20 @@
 
 @media (max-width: 570px) {
   .footer-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .method-tools-box {
+    grid-template-columns: 1fr;
+  }
+
+  .ut-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ut-img {
+    order: 2;
   }
 }
