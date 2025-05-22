@@ -269,4 +269,8 @@
     justify-self: center;
     width: 80%;
   }
+
+  .pain-list li {
+    font-size: 1.2rem;
+  }
 }
