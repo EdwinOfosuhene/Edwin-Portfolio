@@ -599,8 +599,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.width-md {
-  width: 80%;
+.width {
   font-size: 1.6rem;
   margin-bottom: 2rem;
   letter-spacing: 1.3;
